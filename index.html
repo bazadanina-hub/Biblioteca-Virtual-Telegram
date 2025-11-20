@@ -1,105 +1,132 @@
 <!doctype html>
 <html lang="pt-BR">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biblioteca Virtual</title>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
 
-  <!-- Fonte padrão -->
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f7f7f7;
-    }
-  </style>
- </head>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
- <body>
+    <!-- Fonte padrão -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background: #f7f7f7;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+        .video-wrapper iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 10px;
+        }
+        .book-card {
+            background: white;
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        .book-img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .book-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+        .book-price {
+            color: #2563eb;
+            font-weight: bold;
+            margin-top: 6px;
+        }
+        .cta-btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 18px;
+            background: #2563eb;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
 
-  <!-- HERO -->
-  <header class="hero-section w-full text-center py-16">
-    <h1 class="hero-title text-5xl font-bold text-white">
-      BIBLIOTECA VIRTUAL – TELEGRAM
-    </h1>
+<body>
 
-    <p class="hero-subtitle text-xl text-white opacity-90 mt-4">
-      PDFs exclusivos para seu crescimento pessoal e profissional
-    </p>
-  </header>
+    <!-- HERO -->
+    <header class="hero-section w-full text-center py-16">
+        <h1 class="hero-title text-5xl font-bold text-white">
+            BIBLIOTECA VIRTUAL – TELEGRAM
+        </h1>
+        <p class="hero-subtitle text-xl text-white opacity-90 mt-4">
+            PDFs exclusivos para seu crescimento pessoal e profissional
+        </p>
+    </header>
 
-  <!-- VÍDEO -->
-  <section class="max-w-4xl mx-auto px-6 py-12">
-    <div class="video-wrapper">
-      <iframe 
-        src="https://www.youtube.com/embed/Cz1SpDf25R8"
-        frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </section>
+    <!-- VÍDEO -->
+    <section class="max-w-4xl mx-auto px-6 py-12">
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Cz1SpDf25R8" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
 
-  <!-- LIVROS -->
-  <section class="max-w-6xl mx-auto px-6 py-16">
-    <h2 class="section-title text-center">
-      📚 Livros em Destaque
-    </h2>
+    <!-- LIVROS -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="section-title text-center text-3xl font-bold"> 📚 Livros em Destaque </h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
 
-      <!-- CARD 01 -->
-      <div class="book-card">
-        <img src="https://revistamaxima.com.br/wp-content/uploads/2023/12/lei-da-atracao-6-livros-para-comecar-2024-com-o-pe-direito.jpg" class="book-img">
+            <!-- CARD 01 -->
+            <div class="book-card">
+                <img src="assets/livro1.png" class="book-img">
+                <h3 class="book-title">Romance</h3>
+                <p class="book-price">R$ 4,99</p>
+                <a href="https://bazadanina-hub.github.io/Biblioteca-Virtual-Telegram/" class="cta-btn">
+                    Acessar Agora
+                </a>
+            </div>
 
-        <h3 class="book-title">Romance</h3>
-        <p class="book-price">R$ 4,99</p>
+            <!-- CARD 02 -->
+            <div class="book-card">
+                <img src="assets/maisvedndidos.png" class="book-img">
+                <h3 class="book-title">Lei da Atração</h3>
+                <p class="book-price">R$ 4,99</p>
+                <a href="https://bazadanina-hub.github.io/Biblioteca-Virtual-Telegram/" class="cta-btn">
+                    Acessar Agora
+                </a>
+            </div>
 
-        <a href="https://bazadanina-hub.github.io/Biblioteca-Virtual-Telegram/"
-           class="cta-btn">
-          Acessar Agora
-        </a>
-      </div>
+            <!-- CARD 03 -->
+            <div class="book-card">
+                <img src="assets/melhores.png" class="book-img">
+                <h3 class="book-title">Muito Mais</h3>
+                <p class="book-price">R$ 4,99</p>
+                <a href="https://bazadanina-hub.github.io/Biblioteca-Virtual-Telegram/" class="cta-btn">
+                    Acessar Agora
+                </a>
+            </div>
 
-      <!-- CARD 02 -->
-      <div class="book-card">
-        <img src="https://www.pensarcontemporaneo.com/content/uploads/2021/04/19_a_culpa_e_das_estrelas_c.jpg" class="book-img">
+        </div>
+    </section>
 
-        <h3 class="book-title">Lei da Atração</h3>
-        <p class="book-price">R$ 4,99</p>
+    <!-- RODAPÉ -->
+    <footer class="text-center py-8">
+        <p class="text-gray-600 text-sm">
+            © 2024 – Todos os direitos reservados
+        </p>
+    </footer>
 
-        <a href="https://bazadanina-hub.github.io/Biblioteca-Virtual-Telegram/"
-           class="cta-btn">
-          Acessar Agora
-        </a>
-      </div>
+</body>
 
-      <!-- CARD 03 -->
-      <div class="book-card">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrqdo96qw2P4J15Fxl-Uip9iXk_waj3kMfpGQGxaDe2Y0HMqhdbw5aFYIsvpoZko2cCX1W5fdDbLai2ia9HRlm6Ldsqv3kdDM04r_imZ6SUZJEE_pri0owL6iVbjLYut4XRGFpIdf6CTdR/s1600/a-selecao.jpg" class="book-img">
-
-        <h3 class="book-title">Muito Mais</h3>
-        <p class="book-price">R$ 4,99</p>
-
-        <a href="https://bazadanina-hub.github.io/Biblioteca-Virtual-Telegram/"
-           class="cta-btn">
-          Acessar Agora
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- RODAPÉ -->
-  <footer class="text-center py-8">
-    <p class="text-gray-600 text-sm">
-      © 2024 – Todos os direitos reservados
-    </p>
-  </footer>
-
- </body>
 </html>
